@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<chart id="myChart" width="500px" height="500px">
+    <script>
+        const ctx = document.querySelector('#myChart')
+        const ctx2d = ctx.getContext("2d")
+        var myChart = new Chart(ctx2d, {
+            type: 'line',
+            data: {
+                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                  datasets: [{
+                      data: [12, 19, 3, 5, 2, 3]
+
+            }]
+        }
+    })
+    </script>
